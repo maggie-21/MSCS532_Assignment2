@@ -66,9 +66,8 @@ To run the algorithms and perform the performance comparison, follow these steps
    ```bash
    cd MSCS532_Assignment2
 3. Install the necessary dependencies:
-```bash
-pip3 install memory_profiler
-```
+   ```bash
+    pip3 install memory_profiler
 4. Run the Python script:
    ```bash
    python3 Divide_and_Conquer.py
