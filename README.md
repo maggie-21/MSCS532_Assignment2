@@ -43,7 +43,18 @@ The performance of both sorting algorithms is compared using different datasets,
 - Memory usage
 
 ### Results
-Graphs and tables showcasing the performance metrics will be added here after the experiments are conducted.
+| Dataset Size | Algorithm   | Execution Time (s) | Memory Usage (MiB) |
+|--------------|-------------|---------------------|---------------------|
+| 100          | Quick Sort  | 0.432067            | 25.828125           |
+| 100          | Merge Sort  | 0.391466            | 25.828125           |
+| 1000         | Quick Sort  | 0.389513            | 25.859375           |
+| 1000         | Merge Sort  | 0.387793            | 25.859375           |
+| 5000         | Quick Sort  | 0.191514            | 26.109375           |
+| 5000         | Merge Sort  | 0.193700            | 26.1875             |
+| 10000        | Quick Sort  | 0.210713            | 26.734375           |
+| 10000        | Merge Sort  | 0.224165            | 26.859375           |
+
+These results indicate that Quick Sort tends to be slightly faster than Merge Sort on larger datasets, with marginally lower memory usage.
 
 ## 3. Usage
 To run the algorithms and perform the performance comparison, follow these steps:
@@ -54,7 +65,10 @@ To run the algorithms and perform the performance comparison, follow these steps
 2. Navigate to the project directory
    ```bash
    cd MSCS532_Assignment2
-
+3. Install the necessary dependencies:
+```bash
+pip3 install memory_profiler
+```
 4. Run the Python script:
    ```bash
    python3 Divide_and_Conquer.py
